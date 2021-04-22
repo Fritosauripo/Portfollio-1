@@ -1,7 +1,7 @@
-@import 'vars';   // переменные для цвета/шрифта и т.д
-@import 'fonts';  // подключение шрифтов
+@import 'vars';   
+@import 'fonts';
 @import 'reset';
-@import 'global'; // глобальные стили
-
-
-@import 'media';  //медиазапросы        
+@import 'global'; 
+@import 'libs';
+@import 'components/header';
+@import 'components/slider';

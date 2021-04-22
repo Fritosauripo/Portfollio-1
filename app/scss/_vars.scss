@@ -1,0 +1,30 @@
+$background: #282B2D;
+$accent: #FBD784;
+$prime: #EB5757;
+
+
+@mixin alibre($weight) {
+    font-family: 'alibre', sans-serif;
+    font-weight: $weight;
+  }
+  
+  @mixin asans($weight) {
+    font-family: 'asans', sans-serif;
+    font-weight: $weight;
+  }
+  
+  @mixin rochester($weight) {
+    font-family: 'rochester', sans-serif;
+    font-weight: $weight;
+  }
+  
+  @mixin t-clamp($lines, $line-height) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+  
+    @if $line-height {
+      max-height: $line-height * $lines * 1px;
+    }
+  }
