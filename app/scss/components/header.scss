@@ -1,10 +1,12 @@
 .header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 64px 58px 0 80px;
-
-    &__logo {}
 }
 
 .user {

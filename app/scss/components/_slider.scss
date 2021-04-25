@@ -1,6 +1,10 @@
-.slider{
-    padding: 0 80px;
-    &__wrapper{
+.slider {
+    padding: 212px 80px 521px;
+    background-image: url('../images/content/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__wrapper {
         position: relative;
         display: flex;
         justify-content: center;
@@ -8,7 +12,7 @@
         min-height: 464px;
     }
 
-    &__bar{
+    &__bar {
         position: absolute;
         left: 0;
         top: 50%;
@@ -19,40 +23,59 @@
         justify-content: center;
     }
 
-    &__contacts{
+    &__contacts {
         writing-mode: vertical-rl;
+        margin-bottom: 24px;
     }
 
-    &__content{
+    &__icon {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__content {
         max-width: 950px;
+        padding: 20px 20px;
     }
 
-    &__text{
-        position: relative;
+    &__text {
         color: $accent;
-        text-transform: uppercase;
-        padding-left: 104px;
-        @include asans(800);
 
-        &::before{
-            content: '';
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 0;
-            width: 72px;
-            height: 2px;
+        &::before {
             background-color: $accent;
         }
     }
 
-    &__title{
-        @include alibre(400);
+    &__title {
+        margin-bottom: 59px;
+        @include rochester(400);
         font-size: 88px;
         line-height: 1.2;
     }
 
-    &__scroll{
-        background-color: transparent;
+    &__scroll {
+        color: #FFFFFF;
+    }
+
+    .slick-dots {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        button {
+            width: 77px;
+            height: 60px;
+            border-right: 2px solid #CCCCCC;
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+    }
+
+    .slick-dots .slick-active {
+        button {
+            border-right: 2px solid #FFFFFF;
+        }
     }
 }
