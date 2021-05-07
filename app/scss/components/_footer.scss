@@ -1,0 +1,57 @@
+.footer {
+    padding-bottom: 120px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__policy-info{
+        max-width: 347px;
+    }
+
+    &__policy{
+        font-size: 18px;
+        @include asans(500);
+        color: #FFFFFF26;
+    }
+
+    &__logo {
+        margin-bottom: 24px;
+    }
+
+    &__text{
+        margin-bottom: 122px;
+    }
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        width: 195px;
+
+        &:not(:last-child) {
+            margin-right: 212px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-size: 24px;
+        color: $prime;
+    }
+
+    &__list {
+
+        &-item {
+            @include asans(500);
+            font-size: 18px;
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

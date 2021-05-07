@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1473px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -82,4 +82,25 @@ body {
         right: 0;
     }
 
+}
+
+.logo{
+    display: block;
+    svg{
+        display: block;
+        fill: #FFFFFF;
+        transition: fill 0.3s ease;
+
+        &:focus {
+            fill: #CCCCCC;
+        }
+
+        &:hover {
+            fill: $prime;
+        }
+
+        &:active {
+            fill: $accent;
+        }
+    }
 }

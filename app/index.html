@@ -5,16 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="icon" href="images/content/logo.svg" type="image/x-icon">
-  <link rel="shortcut icon" href="images/content/logo.svg" type="image/x-icon">
+  <title>NTMN - a hiking guide</title>
+  <link rel="icon" href="images/content/favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="images/content/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="header">
     <a class="logo header__logo" href="#">
-      <img class="logo__img" src="images/content/logo.svg" alt="logo">
+      <svg width="108" height="24">
+        <use xlink:href="images/sprite.svg#logo"></use>
+      </svg>
     </a>
 
     <nav class="menu">
@@ -85,7 +87,7 @@
                 Be prepared for the Mountains and beyond!
               </p>
 
-              <button class="slider__scroll arrow-text">
+              <button class="slider__scroll arrow-text" type="button">
                 scroll down
 
                 <svg width="16" height="24">
@@ -129,7 +131,7 @@
                 Be prepared for the Mountains and beyond!
               </p>
 
-              <button class="slider__scroll">
+              <button class="slider__scroll arrow-text" type="button">
                 scroll down
 
                 <svg width="16" height="24">
@@ -173,7 +175,7 @@
                 Be prepared for the Mountains and beyond!
               </p>
 
-              <button class="slider__scroll arrow-text">
+              <button class="slider__scroll arrow-text" type="button">
                 scroll down
 
                 <svg width="16" height="24">
@@ -217,7 +219,7 @@
                 Be prepared for the Mountains and beyond!
               </p>
 
-              <button class="slider__scroll arrow-text">
+              <button class="slider__scroll arrow-text" type="button">
                 scroll down
 
                 <svg width="16" height="24">
@@ -234,6 +236,9 @@
       <div class="container">
         <div class="blog__item">
           <div class="blog__content">
+            <span class="blog__num">
+              01
+            </span>
             <p class="blog__pretitle line-text">
               get started
             </p>
@@ -264,8 +269,165 @@
             <img src="images/content/01.jpg" alt="mountains">
           </div>
         </div>
+
+        <div class="blog__item">
+          <div class="blog__img">
+            <img src="images/content/02.jpg" alt="mountains">
+          </div>
+
+          <div class="blog__content">
+            <span class="blog__num">
+              02
+            </span>
+            <p class="blog__pretitle line-text">
+              Hiking Essentials
+            </p>
+
+            <h2 class="blog__title">
+              Picking the right Hiking Gear!
+            </h2>
+
+            <div class="blog__text">
+              <p>
+                The nice thing about beginning hiking is that you don’t really need any special gear, you can probably
+                get away with things you already have.
+                Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes,
+                which will get heavy and chafe wif they get sweaty or wet.
+              </p>
+            </div>
+
+            <a href="#" class="blog__link arrow-text">
+              read more
+
+              <svg width="16" height="24">
+                <use xlink:href="images/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="blog__item">
+          <div class="blog__content">
+            <span class="blog__num">
+              02
+            </span>
+            <p class="blog__pretitle line-text">
+              where you go is the key
+            </p>
+
+            <h2 class="blog__title">
+              Understand Your Map & Timing
+            </h2>
+
+            <div class="blog__text">
+              <p>
+                To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over
+                the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark
+                is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the
+                junction..
+              </p>
+            </div>
+
+            <a href="#" class="blog__link arrow-text">
+              read more
+
+              <svg width="16" height="24">
+                <use xlink:href="images/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="blog__img">
+            <img src="images/content/03.jpg" alt="mountains">
+          </div>
+        </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__policy-info">
+            <a class="logo footer__logo" href="#">
+              <svg width="108" height="24">
+                <use xlink:href="images/sprite.svg#logo"></use>
+              </svg>
+            </a>
+
+            <div class="footer__text">
+              <p>
+                Get out there & discover your next slope, mountain & destination!
+              </p>
+            </div>
+
+            <div class="footer__policy">
+              Copyright 2019 MNTN, Inc. Terms & Privacy
+            </div>
+          </div>
+
+          <ul class="footer__items">
+
+            <li class="footer__item">
+              <h2 class="footer__title">
+                More on The Blog
+              </h2>
+
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__link" href="#">
+                    About MNTN
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__link" href="#">
+                    Contributors & Writers
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__link" href="#">
+                    Write For Us
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__link" href="#">
+                    Contact Us
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__link" href="#">
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="footer__item">
+              <h2 class="footer__title">
+                More on MNTN
+              </h2>
+
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__link" href="#">
+                    The Team
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__link" href="#">
+                    Jobs
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__link" href="#">
+                    Press
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </main>
   <script src="js/main.min.js"></script>
 </body>

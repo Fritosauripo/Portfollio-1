@@ -5,4 +5,13 @@ $(function () {
         verticalSwiping: true,
         vertical: true,
     });
+
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+          $('.header').addClass('header--top');
+        } else {
+          $('.header').removeClass('header--top');
+        }
+      });
 })
