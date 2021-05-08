@@ -28,3 +28,11 @@ $prime: #EB5757;
       max-height: $line-height * $lines * 1px;
     }
   }
+
+  @mixin r ($width) {
+    @media only screen and (max-width: $width + 'px') {
+      @content;
+    }
+  }
+
+  ///320 540 768 1080

@@ -4,6 +4,15 @@ $(function () {
         dots: true,
         verticalSwiping: true,
         vertical: true,
+
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              dots: false,
+            }
+          },
+        ]
     });
 
 

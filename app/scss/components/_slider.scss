@@ -1,8 +1,12 @@
 .slider {
     padding: 212px 80px 521px;
-    background-image: url('../images/content/bg.jpg');
+    background-image: url("../images/content/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include r(1280) {
+        padding: 101px 20px 140px;
+    }
 
     &__wrapper {
         position: relative;
@@ -36,7 +40,11 @@
 
     &__content {
         max-width: 950px;
-        padding: 20px 20px;
+        padding: 20px 60px;
+
+        @include r(540) {
+            padding: 10px 10px 10px 68px;
+        }
     }
 
     &__text {
@@ -52,10 +60,20 @@
         @include rochester(400);
         font-size: 88px;
         line-height: 1.2;
+
+        @include r(1280) {
+            font-size: 50px;
+            text-shadow: 0px 0px 2px #969696;
+            max-width: 420px;
+        }
+
+        @include r(540) {
+            font-size: 36px;
+        }
     }
 
     &__scroll {
-        color: #FFFFFF;
+        color: #ffffff;
     }
 
     .slick-dots {
@@ -67,15 +85,15 @@
         button {
             width: 77px;
             height: 60px;
-            border-right: 2px solid #CCCCCC;
+            border-right: 2px solid #cccccc;
             background-color: transparent;
-            color: #FFFFFF;
+            color: #ffffff;
         }
     }
 
     .slick-dots .slick-active {
         button {
-            border-right: 2px solid #FFFFFF;
+            border-right: 2px solid #ffffff;
         }
     }
 }

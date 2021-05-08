@@ -9,9 +9,17 @@
     padding: 64px 58px 0 80px;
     transition: padding 0.3s, background-color 0.3s ease;
 
+    @include r(768) {
+        padding: 24px 14px 0 14px;
+    }
+
     &--top {
         padding: 10px 58px 10px 80px;
         background-color: #131313;
+
+        @include r(768) {
+            padding: 10px 5px 10px 5px;
+        }
     }
 }
 
@@ -26,7 +34,7 @@
         top: 50%;
         transform: translateY(-50%);
         left: 0;
-        fill: #FFFFFF;
+        fill: #ffffff;
         transition: fill 0.3s ease;
     }
 
@@ -35,10 +43,10 @@
     }
 
     &:focus {
-        color: #CCCCCC;
+        color: #cccccc;
 
         svg {
-            fill: #CCCCCC;
+            fill: #cccccc;
         }
     }
 

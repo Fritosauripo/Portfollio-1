@@ -1,6 +1,6 @@
 body {
     background-color: $background;
-    color: #FFFFFF;
+    color: #ffffff;
     @include asans(700);
     font-size: 18px;
     font-style: normal;
@@ -28,6 +28,10 @@ body {
 .menu {
     &__list {
         display: flex;
+
+        @include r(540) {
+            display: none;
+        }
     }
 
     &__item {
@@ -38,7 +42,7 @@ body {
         }
 
         &:focus {
-            color: #CCCCCC;
+            color: #cccccc;
         }
 
         &:hover {
@@ -49,24 +53,38 @@ body {
             color: $accent;
         }
     }
+
+    &__btn {
+        padding: 0;
+        background-color: transparent;
+        display: none;
+
+        @include r(540) {
+            display: flex;
+        }
+
+        svg {
+            fill: #FFFFFF;
+        }
+    }
 }
 
 .line-text {
     position: relative;
     text-transform: uppercase;
     padding-left: 104px;
-    color: #FFFFFF;
+    color: #ffffff;
     @include asans(800);
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 0;
         width: 72px;
         height: 2px;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
     }
 }
 
@@ -74,25 +92,26 @@ body {
     position: relative;
     background-color: transparent;
     padding-right: 32px;
+    transition: color 0.3s ease;
 
     svg {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         right: 0;
+        transition: fill 0.3s ease;
     }
-
 }
 
-.logo{
+.logo {
     display: block;
-    svg{
+    svg {
         display: block;
-        fill: #FFFFFF;
+        fill: #ffffff;
         transition: fill 0.3s ease;
 
         &:focus {
-            fill: #CCCCCC;
+            fill: #cccccc;
         }
 
         &:hover {

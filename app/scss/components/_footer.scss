@@ -7,21 +7,21 @@
         align-items: center;
     }
 
-    &__policy-info{
+    &__policy-info {
         max-width: 347px;
     }
 
-    &__policy{
+    &__policy {
         font-size: 18px;
         @include asans(500);
-        color: #FFFFFF26;
+        color: #ffffff26;
     }
 
     &__logo {
         margin-bottom: 24px;
     }
 
-    &__text{
+    &__text {
         margin-bottom: 122px;
     }
 
@@ -37,6 +37,21 @@
         }
     }
 
+    &__link {
+        transition: color 0.3s ease;
+        &:focus {
+            color: #cccccc;
+        }
+
+        &:hover {
+            color: $prime;
+        }
+
+        &:active {
+            color: $accent;
+        }
+    }
+
     &__title {
         margin-bottom: 24px;
         font-size: 24px;
@@ -44,7 +59,6 @@
     }
 
     &__list {
-
         &-item {
             @include asans(500);
             font-size: 18px;
